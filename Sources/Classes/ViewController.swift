@@ -127,11 +127,11 @@ public class ViewController: UIViewController {
     public var captionNumberOfLines = 3
     public var openableActivityController = false
 
-    lazy public var pageControl: UIPageControl = {
-        let pageControl = UIPageControl()
+    lazy public var pageControl: UILabel = {
+        let pageControl = UILabel()
         pageControl.frame = .zero
-        pageControl.numberOfPages = self.imageResources()!.count
-        pageControl.isUserInteractionEnabled = false
+        pageControl.color = .white
+        pageControl.textAlignment = .center
         return pageControl
     }()
 
@@ -488,7 +488,7 @@ extension ViewController: UIScrollViewDelegate {
         currentPage = page
 
         if visiblePageControl {
-            pageControl.currentPage = currentPage
+            pageControl.text = "\(currentPage+1)/\(self.imageResources()!.count)"
         }
 
     }
