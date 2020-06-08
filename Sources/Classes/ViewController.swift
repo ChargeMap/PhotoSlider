@@ -10,6 +10,7 @@ import UIKit
 @objc public protocol PhotoSliderDelegate {
     @objc optional func photoSliderControllerWillDismiss(_ viewController: PhotoSlider.ViewController)
     @objc optional func photoSliderControllerDidDismiss(_ viewController: PhotoSlider.ViewController)
+    @objc optional func photoSliderControllerDidTapAddImage(_ viewController: PhotoSlider.ViewController)
 }
 
 enum PhotoSliderControllerScrollMode: UInt {
@@ -84,10 +85,21 @@ public class ViewController: UIViewController {
 
     lazy var closeButton: UIButton = {
         let closeButton = UIButton(frame: CGRect.zero)
-        let imagePath = self.resourceBundle().path(forResource: "PhotoSliderClose", ofType: "png")
-        closeButton.setImage(UIImage(contentsOfFile: imagePath!), for: .normal)
+        if let image = closeButtonImage
+        {
+            closeButton.setImage(closeButtonImage, for: .normal)
+            if let tintColor = closeButtonTintColor
+            {
+                closeButton.tintColor = tintColor
+            }
+        }
+        else
+        {
+            let imagePath = self.resourceBundle().path(forResource: "PhotoSliderClose", ofType: "png")
+            closeButton.setImage(UIImage(contentsOfFile: imagePath!), for: .normal)
+            closeButton.imageView?.contentMode = UIView.ContentMode.center
+        }
         closeButton.addTarget(self, action: #selector(closeButtonDidTap(_:)), for: .touchUpInside)
-        closeButton.imageView?.contentMode = UIView.ContentMode.center
         closeButton.layer.shadowColor = UIColor.black.cgColor
         closeButton.layer.shadowOffset = CGSize(width: 1, height: 1)
         closeButton.layer.shadowRadius = 3
@@ -102,6 +114,20 @@ public class ViewController: UIViewController {
         shareButton.addTarget(self, action: #selector(shareButtonDidTap(_:)), for: .touchUpInside)
         shareButton.imageView?.contentMode = UIView.ContentMode.center
         return shareButton
+    }()
+
+    lazy var addImageButton: UIButton = {
+        let button = UIButton(frame: CGRect.zero)
+        if let image = addImageButtonImage
+        {
+            button.setImage(image, for: .normal)
+            if let tintColor = addImageButtonTintColor
+            {
+                button.tintColor = tintColor
+            }
+        }
+        button.addTarget(self, action: #selector(addImageDidTap(_:)), for: .touchUpInside)
+        return button
     }()
 
     var scrollMode: PhotoSliderControllerScrollMode = .None
@@ -123,6 +149,7 @@ public class ViewController: UIViewController {
     public var visiblePageControl = true
     public var visibleCloseButton = true
     public var visibleShareButton = false
+    public var visibleAddImageButton = true
     public var currentPage = 0
     public var captionNumberOfLines = 3
     public var openableActivityController = false
@@ -132,6 +159,10 @@ public class ViewController: UIViewController {
         pageControl.frame = .zero
         pageControl.textColor = UIColor.white
         pageControl.textAlignment = .center
+        if let font = customFont
+        {
+            pageControl.font = font
+        }
         return pageControl
     }()
 
@@ -142,6 +173,12 @@ public class ViewController: UIViewController {
     public var captionBackgroundViewColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.4)
     public var backgroundViewColor = UIColor.black
     public var captionTextColor = UIColor.white
+    
+    public var customFont: UIFont?
+    public var closeButtonImage: UIImage?
+    public var closeButtonTintColor: UIColor?
+    public var addImageButtonImage: UIImage?
+    public var addImageButtonTintColor: UIImage?
 
     public var imageLoader: PhotoSlider.ImageLoader?
 
@@ -233,6 +270,11 @@ public class ViewController: UIViewController {
             view.addSubview(shareButton)
             layoutShareButton()
         }
+        
+        if visibleAddImageButton {
+            view.addSubview(addImageButton)
+            layoutAddImageButton()
+        }
 
         // Caption Background
         view.addSubview(captionBackgroundView)
@@ -272,6 +314,10 @@ public class ViewController: UIViewController {
         activityViewController.popoverPresentationController?.sourceView = self.view // so that iPads won't crash
 
         present(activityViewController, animated: true, completion: nil)
+    }
+
+    @objc func addImageDidTap(_ sender: UIButton) {
+        delegate?.photoSliderControllerDidTapAddImage?(self)
     }
 
     override public func viewWillAppear(_ animated: Bool) {
@@ -342,6 +388,26 @@ fileprivate extension ViewController {
                 shareButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0.0),
                 shareButton.heightAnchor.constraint(equalToConstant: 52.0),
                 shareButton.widthAnchor.constraint(equalToConstant: 52.0),
+                ].forEach { $0.isActive = true }
+
+        }
+    }
+    
+    func layoutAddImageButton() {
+        addImageButton.translatesAutoresizingMaskIntoConstraints = false
+        if #available(iOS 11.0, *) {
+            [
+                addImageButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0.0),
+                addImageButton.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: 0.0),
+                addImageButton.heightAnchor.constraint(equalToConstant: 52.0),
+                addImageButton.widthAnchor.constraint(equalToConstant: 52.0),
+                ].forEach { $0.isActive = true }
+        } else {
+            [
+                addImageButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 0.0),
+                addImageButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0.0),
+                addImageButton.heightAnchor.constraint(equalToConstant: 52.0),
+                addImageButton.widthAnchor.constraint(equalToConstant: 52.0),
                 ].forEach { $0.isActive = true }
 
         }
