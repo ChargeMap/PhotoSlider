@@ -312,14 +312,14 @@ fileprivate extension ViewController {
         if #available(iOS 11.0, *) {
             [
                 closeButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0.0),
-                closeButton.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: 0.0),
+                closeButton.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 0.0),
                 closeButton.heightAnchor.constraint(equalToConstant: 52.0),
                 closeButton.widthAnchor.constraint(equalToConstant: 52.0),
                 ].forEach { $0.isActive = true }
         } else {
             [
                 closeButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 0.0),
-                closeButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0.0),
+                closeButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0.0),
                 closeButton.heightAnchor.constraint(equalToConstant: 52.0),
                 closeButton.widthAnchor.constraint(equalToConstant: 52.0),
                 ].forEach { $0.isActive = true }
@@ -332,14 +332,14 @@ fileprivate extension ViewController {
         if #available(iOS 11.0, *) {
             [
                 shareButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0.0),
-                shareButton.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 0.0),
+                shareButton.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: 0.0),
                 shareButton.heightAnchor.constraint(equalToConstant: 52.0),
                 shareButton.widthAnchor.constraint(equalToConstant: 52.0),
                 ].forEach { $0.isActive = true }
         } else {
             [
                 shareButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 0.0),
-                shareButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0.0),
+                shareButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0.0),
                 shareButton.heightAnchor.constraint(equalToConstant: 52.0),
                 shareButton.widthAnchor.constraint(equalToConstant: 52.0),
                 ].forEach { $0.isActive = true }
