@@ -130,7 +130,7 @@ public class ViewController: UIViewController {
     lazy public var pageControl: UILabel = {
         let pageControl = UILabel()
         pageControl.frame = .zero
-        pageControl.color = UIColor.white
+        pageControl.textColor = UIColor.white
         pageControl.textAlignment = .center
         return pageControl
     }()
