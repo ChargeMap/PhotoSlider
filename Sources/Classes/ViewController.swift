@@ -178,7 +178,7 @@ public class ViewController: UIViewController {
     public var closeButtonImage: UIImage?
     public var closeButtonTintColor: UIColor?
     public var addImageButtonImage: UIImage?
-    public var addImageButtonTintColor: UIImage?
+    public var addImageButtonTintColor: UIColor?
 
     public var imageLoader: PhotoSlider.ImageLoader?
 
