@@ -36,5 +36,10 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/onevcat/Kingfisher", from: "6.0.0"),
+    ],
+    targets: [
+        .target(
+            name: "SINQ",
+            dependencies: ["Kingfisher"])
     ]
 )
