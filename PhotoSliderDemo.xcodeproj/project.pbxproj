@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B0A0CA661FC71B9A00D132C9 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = B0A0CA641FC71B9A00D132C9 /* .travis.yml */; };
-		B0A0CA671FC71B9A00D132C9 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = B0A0CA651FC71B9A00D132C9 /* .swiftlint.yml */; };
-		DC0E41DA1C3180290090AC94 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DC0E41D71C3180290090AC94 /* LICENSE */; };
-		DC0E41DB1C3180290090AC94 /* PhotoSlider.podspec in Resources */ = {isa = PBXBuildFile; fileRef = DC0E41D81C3180290090AC94 /* PhotoSlider.podspec */; };
 		DC20F45D1ADA871D009A4C64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC20F45C1ADA871D009A4C64 /* AppDelegate.swift */; };
 		DC20F45F1ADA871D009A4C64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC20F45E1ADA871D009A4C64 /* ViewController.swift */; };
 		DC20F4621ADA871D009A4C64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC20F4601ADA871D009A4C64 /* Main.storyboard */; };
@@ -28,8 +24,6 @@
 		DCE8F53A1B94A2EA00B2D224 /* image006.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DCE8F5321B94A2EA00B2D224 /* image006.jpg */; };
 		DCE8F53B1B94A2EA00B2D224 /* image007.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DCE8F5331B94A2EA00B2D224 /* image007.jpg */; };
 		DCE8F53C1B94A2EA00B2D224 /* image008.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DCE8F5341B94A2EA00B2D224 /* image008.jpg */; };
-		DCED67C5203878080017A724 /* PhotoSlider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCED67C4203878080017A724 /* PhotoSlider.framework */; };
-		DCED67C6203878080017A724 /* PhotoSlider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DCED67C4203878080017A724 /* PhotoSlider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +43,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DCED67C6203878080017A724 /* PhotoSlider.framework in Embed Frameworks */,
 				DC5846E21D405374003A5D23 /* Kingfisher.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -58,10 +51,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B0A0CA641FC71B9A00D132C9 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
-		B0A0CA651FC71B9A00D132C9 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
-		DC0E41D71C3180290090AC94 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		DC0E41D81C3180290090AC94 /* PhotoSlider.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PhotoSlider.podspec; sourceTree = "<group>"; };
 		DC20F4571ADA871D009A4C64 /* PhotoSliderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoSliderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC20F45B1ADA871D009A4C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC20F45C1ADA871D009A4C64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,7 +73,6 @@
 		DCE8F5321B94A2EA00B2D224 /* image006.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image006.jpg; sourceTree = "<group>"; };
 		DCE8F5331B94A2EA00B2D224 /* image007.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image007.jpg; sourceTree = "<group>"; };
 		DCE8F5341B94A2EA00B2D224 /* image008.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image008.jpg; sourceTree = "<group>"; };
-		DCED67C4203878080017A724 /* PhotoSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PhotoSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +80,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCED67C5203878080017A724 /* PhotoSlider.framework in Frameworks */,
 				DC5846E11D405374003A5D23 /* Kingfisher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,9 +106,7 @@
 		DC20F44E1ADA871D009A4C64 = {
 			isa = PBXGroup;
 			children = (
-				DCED67C4203878080017A724 /* PhotoSlider.framework */,
 				DCE8F52C1B94A2EA00B2D224 /* Resources */,
-				DC740B151AEC6A0900079D30 /* Podspec Metadata */,
 				DC20F4591ADA871D009A4C64 /* PhotoSliderDemo */,
 				DC917AC51BB29B7300031F84 /* PhotoSliderDemoUITests */,
 				DC20F4581ADA871D009A4C64 /* Products */,
@@ -159,17 +144,6 @@
 				DC20F4801ADA9657009A4C64 /* PhotoSliderDemo-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		DC740B151AEC6A0900079D30 /* Podspec Metadata */ = {
-			isa = PBXGroup;
-			children = (
-				DC0E41D71C3180290090AC94 /* LICENSE */,
-				DC0E41D81C3180290090AC94 /* PhotoSlider.podspec */,
-				B0A0CA651FC71B9A00D132C9 /* .swiftlint.yml */,
-				B0A0CA641FC71B9A00D132C9 /* .travis.yml */,
-			);
-			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
 		DC917AC51BB29B7300031F84 /* PhotoSliderDemoUITests */ = {
@@ -281,7 +255,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0A0CA671FC71B9A00D132C9 /* .swiftlint.yml in Resources */,
 				DC20F4621ADA871D009A4C64 /* Main.storyboard in Resources */,
 				DCE8F5371B94A2EA00B2D224 /* image003.jpg in Resources */,
 				DC20F4671ADA871D009A4C64 /* LaunchScreen.xib in Resources */,
@@ -289,12 +262,9 @@
 				DCE8F53B1B94A2EA00B2D224 /* image007.jpg in Resources */,
 				DCE8F53A1B94A2EA00B2D224 /* image006.jpg in Resources */,
 				DC20F4641ADA871D009A4C64 /* Images.xcassets in Resources */,
-				DC0E41DB1C3180290090AC94 /* PhotoSlider.podspec in Resources */,
 				DCE8F5391B94A2EA00B2D224 /* image005.jpg in Resources */,
-				DC0E41DA1C3180290090AC94 /* LICENSE in Resources */,
 				DCE8F5351B94A2EA00B2D224 /* image001.jpg in Resources */,
 				DCE8F5381B94A2EA00B2D224 /* image004.jpg in Resources */,
-				B0A0CA661FC71B9A00D132C9 /* .travis.yml in Resources */,
 				DCE8F53C1B94A2EA00B2D224 /* image008.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
