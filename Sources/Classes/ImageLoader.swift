@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 public protocol ImageLoader: AnyObject {
     typealias ProgressBlock = (_ receivedSize: Int, _ totalSize: Int) -> Void

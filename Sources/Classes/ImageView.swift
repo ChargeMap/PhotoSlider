@@ -135,11 +135,11 @@ class ImageView: UIView {
         imageLoader?.load(
             imageView: imageView,
             fromURL: imageURL,
-            progress: { [weak self] (receivedSize, totalSize) in
+            progress: { [weak self] (receivedSize: Int, totalSize: Int) in
                 let progress: Float = Float(receivedSize) / Float(totalSize)
                 self?.progressView.animateCurveToProgress(progress: progress)
             },
-            completion: { [weak self] (image) in
+            completion: { [weak self] (image: UIImage?) in
                 self?.progressView.isHidden = true
                 if let image = image {
                     self?.layoutImageView(image: image)

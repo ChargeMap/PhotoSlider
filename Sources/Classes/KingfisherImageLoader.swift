@@ -8,6 +8,7 @@
 
 import Foundation
 import Kingfisher
+import UIKit
 
 public class KingfisherImageLoader: ImageLoader {
     public func load(
