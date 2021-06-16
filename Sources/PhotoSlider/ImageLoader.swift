@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import UIKit
 
-public protocol ImageLoader: class {
+public protocol ImageLoader: AnyObject {
     typealias ProgressBlock = (_ receivedSize: Int, _ totalSize: Int) -> Void
     typealias CompletionBlock = (_ image: UIImage?) -> Void
 

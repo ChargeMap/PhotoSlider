@@ -3,21 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B0A0CA661FC71B9A00D132C9 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = B0A0CA641FC71B9A00D132C9 /* .travis.yml */; };
-		B0A0CA671FC71B9A00D132C9 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = B0A0CA651FC71B9A00D132C9 /* .swiftlint.yml */; };
-		DC0E41DA1C3180290090AC94 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DC0E41D71C3180290090AC94 /* LICENSE */; };
-		DC0E41DB1C3180290090AC94 /* PhotoSlider.podspec in Resources */ = {isa = PBXBuildFile; fileRef = DC0E41D81C3180290090AC94 /* PhotoSlider.podspec */; };
 		DC20F45D1ADA871D009A4C64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC20F45C1ADA871D009A4C64 /* AppDelegate.swift */; };
 		DC20F45F1ADA871D009A4C64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC20F45E1ADA871D009A4C64 /* ViewController.swift */; };
 		DC20F4621ADA871D009A4C64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC20F4601ADA871D009A4C64 /* Main.storyboard */; };
 		DC20F4641ADA871D009A4C64 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC20F4631ADA871D009A4C64 /* Images.xcassets */; };
 		DC20F4671ADA871D009A4C64 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC20F4651ADA871D009A4C64 /* LaunchScreen.xib */; };
-		DC5846E11D405374003A5D23 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5846E01D405374003A5D23 /* Kingfisher.framework */; };
-		DC5846E21D405374003A5D23 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC5846E01D405374003A5D23 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DC917AC71BB29B7300031F84 /* PhotoSliderDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC917AC61BB29B7300031F84 /* PhotoSliderDemoUITests.swift */; };
 		DC917AF11BB3BC5700031F84 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC917AF01BB3BC5700031F84 /* ImageCollectionViewCell.swift */; };
 		DCE8F5351B94A2EA00B2D224 /* image001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DCE8F52D1B94A2EA00B2D224 /* image001.jpg */; };
@@ -28,8 +22,7 @@
 		DCE8F53A1B94A2EA00B2D224 /* image006.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DCE8F5321B94A2EA00B2D224 /* image006.jpg */; };
 		DCE8F53B1B94A2EA00B2D224 /* image007.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DCE8F5331B94A2EA00B2D224 /* image007.jpg */; };
 		DCE8F53C1B94A2EA00B2D224 /* image008.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DCE8F5341B94A2EA00B2D224 /* image008.jpg */; };
-		DCED67C5203878080017A724 /* PhotoSlider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCED67C4203878080017A724 /* PhotoSlider.framework */; };
-		DCED67C6203878080017A724 /* PhotoSlider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DCED67C4203878080017A724 /* PhotoSlider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF998A502679DBE0009A45A9 /* PhotoSlider in Frameworks */ = {isa = PBXBuildFile; productRef = EF998A4F2679DBE0009A45A9 /* PhotoSlider */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,26 +35,7 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		DC5846E31D405374003A5D23 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				DCED67C6203878080017A724 /* PhotoSlider.framework in Embed Frameworks */,
-				DC5846E21D405374003A5D23 /* Kingfisher.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		B0A0CA641FC71B9A00D132C9 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
-		B0A0CA651FC71B9A00D132C9 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
-		DC0E41D71C3180290090AC94 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		DC0E41D81C3180290090AC94 /* PhotoSlider.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PhotoSlider.podspec; sourceTree = "<group>"; };
 		DC20F4571ADA871D009A4C64 /* PhotoSliderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoSliderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC20F45B1ADA871D009A4C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC20F45C1ADA871D009A4C64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,7 +58,6 @@
 		DCE8F5321B94A2EA00B2D224 /* image006.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image006.jpg; sourceTree = "<group>"; };
 		DCE8F5331B94A2EA00B2D224 /* image007.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image007.jpg; sourceTree = "<group>"; };
 		DCE8F5341B94A2EA00B2D224 /* image008.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image008.jpg; sourceTree = "<group>"; };
-		DCED67C4203878080017A724 /* PhotoSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PhotoSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCED67C5203878080017A724 /* PhotoSlider.framework in Frameworks */,
-				DC5846E11D405374003A5D23 /* Kingfisher.framework in Frameworks */,
+				EF998A502679DBE0009A45A9 /* PhotoSlider in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,9 +91,7 @@
 		DC20F44E1ADA871D009A4C64 = {
 			isa = PBXGroup;
 			children = (
-				DCED67C4203878080017A724 /* PhotoSlider.framework */,
 				DCE8F52C1B94A2EA00B2D224 /* Resources */,
-				DC740B151AEC6A0900079D30 /* Podspec Metadata */,
 				DC20F4591ADA871D009A4C64 /* PhotoSliderDemo */,
 				DC917AC51BB29B7300031F84 /* PhotoSliderDemoUITests */,
 				DC20F4581ADA871D009A4C64 /* Products */,
@@ -161,17 +131,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DC740B151AEC6A0900079D30 /* Podspec Metadata */ = {
-			isa = PBXGroup;
-			children = (
-				DC0E41D71C3180290090AC94 /* LICENSE */,
-				DC0E41D81C3180290090AC94 /* PhotoSlider.podspec */,
-				B0A0CA651FC71B9A00D132C9 /* .swiftlint.yml */,
-				B0A0CA641FC71B9A00D132C9 /* .travis.yml */,
-			);
-			name = "Podspec Metadata";
-			sourceTree = "<group>";
-		};
 		DC917AC51BB29B7300031F84 /* PhotoSliderDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,7 +165,6 @@
 				DC20F4531ADA871D009A4C64 /* Sources */,
 				DC20F4541ADA871D009A4C64 /* Frameworks */,
 				DC20F4551ADA871D009A4C64 /* Resources */,
-				DC5846E31D405374003A5D23 /* Embed Frameworks */,
 				B0A0CA631FC71B1200D132C9 /* Run Script - SwiftLint */,
 			);
 			buildRules = (
@@ -214,6 +172,9 @@
 			dependencies = (
 			);
 			name = PhotoSliderDemo;
+			packageProductDependencies = (
+				EF998A4F2679DBE0009A45A9 /* PhotoSlider */,
+			);
 			productName = PhotoSliderDemo;
 			productReference = DC20F4571ADA871D009A4C64 /* PhotoSliderDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -243,7 +204,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = net.nakajijapan;
 				TargetAttributes = {
 					DC20F4561ADA871D009A4C64 = {
@@ -266,6 +227,9 @@
 				Base,
 			);
 			mainGroup = DC20F44E1ADA871D009A4C64;
+			packageReferences = (
+				EF998A4E2679DBE0009A45A9 /* XCRemoteSwiftPackageReference "PhotoSlider" */,
+			);
 			productRefGroup = DC20F4581ADA871D009A4C64 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -281,7 +245,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0A0CA671FC71B9A00D132C9 /* .swiftlint.yml in Resources */,
 				DC20F4621ADA871D009A4C64 /* Main.storyboard in Resources */,
 				DCE8F5371B94A2EA00B2D224 /* image003.jpg in Resources */,
 				DC20F4671ADA871D009A4C64 /* LaunchScreen.xib in Resources */,
@@ -289,12 +252,9 @@
 				DCE8F53B1B94A2EA00B2D224 /* image007.jpg in Resources */,
 				DCE8F53A1B94A2EA00B2D224 /* image006.jpg in Resources */,
 				DC20F4641ADA871D009A4C64 /* Images.xcassets in Resources */,
-				DC0E41DB1C3180290090AC94 /* PhotoSlider.podspec in Resources */,
 				DCE8F5391B94A2EA00B2D224 /* image005.jpg in Resources */,
-				DC0E41DA1C3180290090AC94 /* LICENSE in Resources */,
 				DCE8F5351B94A2EA00B2D224 /* image001.jpg in Resources */,
 				DCE8F5381B94A2EA00B2D224 /* image004.jpg in Resources */,
-				B0A0CA661FC71B9A00D132C9 /* .travis.yml in Resources */,
 				DCE8F53C1B94A2EA00B2D224 /* image008.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +357,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -421,7 +382,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -453,6 +414,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -470,10 +432,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -492,7 +455,10 @@
 				);
 				INFOPLIST_FILE = PhotoSliderDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.nakajijapan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PhotoSliderDemo/PhotoSliderDemo-Bridging-Header.h";
@@ -514,7 +480,10 @@
 				);
 				INFOPLIST_FILE = PhotoSliderDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.nakajijapan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PhotoSliderDemo/PhotoSliderDemo-Bridging-Header.h";
@@ -533,8 +502,12 @@
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = PhotoSliderDemoUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.nakajijapan.PhotoSliderDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -555,8 +528,12 @@
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = PhotoSliderDemoUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.nakajijapan.PhotoSliderDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -597,6 +574,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EF998A4E2679DBE0009A45A9 /* XCRemoteSwiftPackageReference "PhotoSlider" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ChargeMap/PhotoSlider";
+			requirement = {
+				branch = spm;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EF998A4F2679DBE0009A45A9 /* PhotoSlider */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF998A4E2679DBE0009A45A9 /* XCRemoteSwiftPackageReference "PhotoSlider" */;
+			productName = PhotoSlider;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DC20F44F1ADA871D009A4C64 /* Project object */;
 }
