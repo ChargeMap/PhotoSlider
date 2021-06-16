@@ -95,7 +95,7 @@ public class ViewController: UIViewController {
         }
         else
         {
-            closeButton.setImage(UIImage(named: "PhotoSliderClose"), for: .normal)
+            closeButton.setImage(UIImage(named: "PhotoSliderClose", in: .module, compatibleWith: nil), for: .normal)
             closeButton.imageView?.contentMode = UIView.ContentMode.center
         }
         closeButton.addTarget(self, action: #selector(closeButtonDidTap(_:)), for: .touchUpInside)
@@ -108,7 +108,7 @@ public class ViewController: UIViewController {
 
     lazy var shareButton: UIButton = {
         let shareButton = UIButton(frame: CGRect.zero)
-        shareButton.setImage(UIImage(named: "PhotoSliderShare"), for: .normal)
+        shareButton.setImage(UIImage(named: "PhotoSliderShare", in: .module, compatibleWith: nil), for: .normal)
         shareButton.addTarget(self, action: #selector(shareButtonDidTap(_:)), for: .touchUpInside)
         shareButton.imageView?.contentMode = UIView.ContentMode.center
         return shareButton
