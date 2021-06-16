@@ -29,6 +29,7 @@ import PackageDescription
 
 let package = Package(
     name: "PhotoSlider",
+    platforms: [.iOS(.v10)],
     products: [
         .library(
             name: "PhotoSlider",
