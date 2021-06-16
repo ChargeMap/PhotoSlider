@@ -685,19 +685,7 @@ extension ViewController: PhotoSliderImageViewDelegate {
     }
 
     fileprivate func resourceBundle() -> Bundle {
-
-        let bundlePath = Bundle.main.path(
-            forResource: "PhotoSlider",
-            ofType: "bundle",
-            inDirectory: "Frameworks/PhotoSlider.framework"
-        )
-
-        if bundlePath != nil {
-            return Bundle(path: bundlePath!)!
-        }
-
-        return Bundle(for: type(of: self))
-
+        return Bundle.main
     }
 }
 
