@@ -41,7 +41,6 @@
 		DC0E41C91C317E850090AC94 /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		DC0E41CA1C317E850090AC94 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC0E41CB1C317E850090AC94 /* ZoomingAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomingAnimationController.swift; sourceTree = "<group>"; };
-		DC0E41F31C3181230090AC94 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		DC0E41FA1C3181EE0090AC94 /* PhotoSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PhotoSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC3EE1DA1D9C96610046AFE2 /* UIImage+PhotoSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+PhotoSlider.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,7 +116,6 @@
 		DC0E420F1C3184880090AC94 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DC0E41F31C3181230090AC94 /* Kingfisher.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
