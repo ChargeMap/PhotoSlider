@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,7 @@
 		DC3EE1DB1D9C96610046AFE2 /* UIImage+PhotoSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3EE1DA1D9C96610046AFE2 /* UIImage+PhotoSlider.swift */; };
 		DC5846DF1D40531E003A5D23 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0E421B1C3184D80090AC94 /* Kingfisher.framework */; };
 		DC69C9511C322595006D5347 /* PhotoSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0E41BE1C317E850090AC94 /* PhotoSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF998A392679D522009A45A9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EF998A382679D522009A45A9 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF998A392679D522009A45A9 /* Kingfisher in Frameworks */,
 				DC5846DF1D40531E003A5D23 /* Kingfisher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,6 +228,9 @@
 			dependencies = (
 			);
 			name = PhotoSlider;
+			packageProductDependencies = (
+				EF998A382679D522009A45A9 /* Kingfisher */,
+			);
 			productName = PhotoSlider;
 			productReference = DC0E41FA1C3181EE0090AC94 /* PhotoSlider.framework */;
 			productType = "com.apple.product-type.framework";
@@ -254,6 +259,9 @@
 				Base,
 			);
 			mainGroup = DC0E419E1C317DD50090AC94;
+			packageReferences = (
+				EF998A372679D522009A45A9 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = DC0E41A81C317DD50090AC94 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
@@ -456,7 +464,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -478,7 +487,11 @@
 				INFOPLIST_FILE = PhotoSlider/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.nakajijapan.PhotoSlider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -505,7 +518,11 @@
 				INFOPLIST_FILE = PhotoSlider/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.nakajijapan.PhotoSlider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -538,6 +555,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EF998A372679D522009A45A9 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EF998A382679D522009A45A9 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF998A372679D522009A45A9 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DC0E419F1C317DD50090AC94 /* Project object */;
 }
