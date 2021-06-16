@@ -12,8 +12,6 @@
 		DC20F4621ADA871D009A4C64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC20F4601ADA871D009A4C64 /* Main.storyboard */; };
 		DC20F4641ADA871D009A4C64 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC20F4631ADA871D009A4C64 /* Images.xcassets */; };
 		DC20F4671ADA871D009A4C64 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC20F4651ADA871D009A4C64 /* LaunchScreen.xib */; };
-		DC5846E11D405374003A5D23 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5846E01D405374003A5D23 /* Kingfisher.framework */; };
-		DC5846E21D405374003A5D23 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC5846E01D405374003A5D23 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DC917AC71BB29B7300031F84 /* PhotoSliderDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC917AC61BB29B7300031F84 /* PhotoSliderDemoUITests.swift */; };
 		DC917AF11BB3BC5700031F84 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC917AF01BB3BC5700031F84 /* ImageCollectionViewCell.swift */; };
 		DCE8F5351B94A2EA00B2D224 /* image001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DCE8F52D1B94A2EA00B2D224 /* image001.jpg */; };
@@ -36,20 +34,6 @@
 			remoteInfo = PhotoSliderDemo;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		DC5846E31D405374003A5D23 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				DC5846E21D405374003A5D23 /* Kingfisher.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DC20F4571ADA871D009A4C64 /* PhotoSliderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoSliderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,7 +66,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF998A502679DBE0009A45A9 /* PhotoSlider in Frameworks */,
-				DC5846E11D405374003A5D23 /* Kingfisher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,7 +165,6 @@
 				DC20F4531ADA871D009A4C64 /* Sources */,
 				DC20F4541ADA871D009A4C64 /* Frameworks */,
 				DC20F4551ADA871D009A4C64 /* Resources */,
-				DC5846E31D405374003A5D23 /* Embed Frameworks */,
 				B0A0CA631FC71B1200D132C9 /* Run Script - SwiftLint */,
 			);
 			buildRules = (
