@@ -40,7 +40,8 @@ let package = Package(
     targets: [
         .target(
             name: "PhotoSlider",
-            dependencies: ["Kingfisher"]),
-            path: "Sources/Classes"),
+            dependencies: ["Kingfisher"],
+            path: "Sources/Classes"
+        )
     ]
 )
