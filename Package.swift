@@ -42,11 +42,7 @@ let package = Package(
     targets: [
         .target(
             name: "PhotoSlider",
-            dependencies: ["Kingfisher"],
-            path: "Sources/Classes",
-            resources: [
-              .process("Resources")
-            ]
+            dependencies: ["Kingfisher"]
         )
     ]
 )
