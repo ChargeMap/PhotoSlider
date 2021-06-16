@@ -29,6 +29,11 @@ import PackageDescription
 
 let package = Package(
     name: "PhotoSlider",
+    products: [
+        .library(
+            name: "PhotoSlider",
+            targets: ["PhotoSlider"]),
+    ]
     dependencies: [
         .package(url: "https://github.com/onevcat/Kingfisher", from: "6.0.0"),
     ]
