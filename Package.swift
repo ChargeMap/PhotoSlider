@@ -39,7 +39,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "SINQ",
+            name: "PhotoSlider",
             dependencies: ["Kingfisher"])
     ]
 )
