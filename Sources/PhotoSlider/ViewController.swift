@@ -95,7 +95,8 @@ public class ViewController: UIViewController {
         }
         else
         {
-            closeButton.setImage(UIImage(named: "PhotoSliderClose")!, for: .normal)
+            let imagePath = self.resourceBundle().path(forResource: "PhotoSliderClose", ofType: "png")
+            closeButton.setImage(UIImage(contentsOfFile: imagePath!), for: .normal)
             closeButton.imageView?.contentMode = UIView.ContentMode.center
         }
         closeButton.addTarget(self, action: #selector(closeButtonDidTap(_:)), for: .touchUpInside)
@@ -108,7 +109,8 @@ public class ViewController: UIViewController {
 
     lazy var shareButton: UIButton = {
         let shareButton = UIButton(frame: CGRect.zero)
-        shareButton.setImage(UIImage(named: "PhotoSliderShare")!, for: .normal)
+        let imagePath = self.resourceBundle().path(forResource: "PhotoSliderShare", ofType: "png")
+        shareButton.setImage(UIImage(contentsOfFile: imagePath!), for: .normal)
         shareButton.addTarget(self, action: #selector(shareButtonDidTap(_:)), for: .touchUpInside)
         shareButton.imageView?.contentMode = UIView.ContentMode.center
         return shareButton
@@ -682,19 +684,9 @@ extension ViewController: PhotoSliderImageViewDelegate {
         })
     }
 
-//    fileprivate func resourceBundle() -> Bundle {
-//        let bundlePath = Bundle.main.path(
-//            forResource: "Media",
-//            ofType: "bundle"
-//        )
-//
-//        if bundlePath != nil {
-//            return Bundle(path: bundlePath!)!
-//        }
-//
-//        return Bundle(for: type(of: self))
-//
-//    }
+    fileprivate func resourceBundle() -> Bundle {
+        return Bundle.module
+    }
 }
 
 // MARK: - UITraitEnvironmenat
