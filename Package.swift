@@ -33,7 +33,6 @@ let package = Package(
         .library(
             name: "PhotoSlider",
             targets: ["PhotoSlider"],
-            path: "Sources/Classes"),
     ],
     dependencies: [
         .package(url: "https://github.com/onevcat/Kingfisher", from: "6.0.0"),
@@ -41,6 +40,7 @@ let package = Package(
     targets: [
         .target(
             name: "PhotoSlider",
-            dependencies: ["Kingfisher"])
+            dependencies: ["Kingfisher"]),
+            path: "Sources/Classes"),
     ]
 )
